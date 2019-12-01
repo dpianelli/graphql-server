@@ -1,0 +1,34 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "doms test graphql server",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "graphdoc -f node index.js"
+  },
+  "repository": "git+https://github.com/dpianelli/graphql-server.git",
+  "keywords": [
+    "graphql",
+    "server",
+    "node"
+  ],
+  "graphdoc": {
+    "endpoint": "http://localhost:4000",
+    "output": "./doc/schema"
+  },
+  "author": "Dominique Pianelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpianelli/graphql-server/issues"
+  },
+  "homepage": "https://github.com/dpianelli/graphql-server#readme",
+  "dependencies": {
+    "@2fd/graphdoc": "^2.4.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-config": "^2.2.1",
+    "graphql-yoga": "^1.18.3"
+  }
+}
